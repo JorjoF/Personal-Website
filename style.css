@@ -1,12 +1,17 @@
 h1{
     text-align: center;
+    max-width: 100%;
+    height: auto;
 }
 p{
     text-align: center;
+    max-width: 100%;
+    height: auto;
 }
 #spiderman_eating{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 20ex;
+    max-width: 100%;
+    height: auto;
 }
