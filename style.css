@@ -121,7 +121,7 @@ img {
     margin-right: 2rem;
   }
   
-  @media (max-width: 28.75em) {
+  @media (max-device-width: 480px) {
     .nav {
       justify-content: center;
     }
