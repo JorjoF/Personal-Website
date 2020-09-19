@@ -122,7 +122,7 @@ img {
   }
   
   @media only screen 
-  and (min-device-width: 310px) 
+  and (min-device-width: 270px) 
   and (max-device-width: 667px) 
   and (orientation: portrait) {
     .nav {
