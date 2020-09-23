@@ -179,6 +179,18 @@ img {
     font-style: italic;
     color: var(--main-green);
   }
+  @media only screen 
+and (min-device-width: 270px) 
+and (max-device-width: 667px) 
+and (orientation: portrait) {
+  h1{
+    font-size: 13rem;
+  }
+  .welcome-section > p{
+    font-size: 7rem;
+    
+  }
+}
 /* Projects section */
 
 .projects-section {
@@ -341,7 +353,15 @@ and (orientation: portrait) {
 and (min-device-width: 270px) 
 and (max-device-width: 667px) 
 and (orientation: portrait) {
-
+  .contact-section-header > h2 {
+    font-size: 8rem;
+  }
+  .contact-section-header > p {
+    font-size: 4rem;
+  }
+  .contact-links{
+    margin: 5rem 0;
+  }
   .contact-details {
     font-size: 5rem;
     text-shadow: 2px 2px 1px #1f1f1f;
