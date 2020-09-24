@@ -192,6 +192,7 @@ and (orientation: portrait) {
   }
   .welcome-section > p{
     font-size: 7rem;
+    text-align: center;
     
   }
 }
