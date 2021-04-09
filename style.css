@@ -258,6 +258,7 @@ and (orientation: portrait) {
   height: calc(100% - 5rem);
   width: 100%;
   object-fit: cover;
+  border: 0;
 }
 
 .project-title {
