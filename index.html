@@ -1,127 +1,114 @@
 <!DOCTYPE html>
-<TYPE html>
-<html>
+<html lang="en">
     <head>
-        <title>Jorge Fuerte Web</title>
-        <link rel="icon" href="https://i.ibb.co/9sqLxZT/web-icon.png">
-        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="static/css/main.css">
+        <link rel="icon" type="image/png" href="static/images/logo_transparent.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
         <link
             rel="stylesheet"
             href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
             integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay"
             crossorigin="anonymous"
         />
-        <link
-            href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap"
-            rel="stylesheet"
-        />
-        <link
-            href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
-            rel="stylesheet"
-        />
+        <title>Jorge Fuerte</title>
     </head>
     <body>
-
-        <!-- START NAV -->
-
         <nav id="navbar" class="nav">
             <ul class="nav-list">
-                <li>
-                    <a href="#welcome-section">About</a>
+                <li class="nav-item">
+                    <a href="#1" class="nav-link">About</a>
                 </li>
-                <li>
-                    <a href="#projects">Portfolio</a>
+                <li class="nav-item">
+                    <a href="#2" class="nav-link">Info</a>
                 </li>
-                <li>
-                    <a href="#contact">Contact</a>
+                <li class="nav-item">
+                    <a href="#3" class="nav-link">Contact</a>
                 </li>
             </ul>
         </nav>
-
-        <!-- END NAV -->
-
-        <!-- START WELCOME SECTION-->
+        <main>
+            <section id="1" class="welcome-section">
+                <h1 class="name"><span class="decorator">&lt;</span>Jorge Fuerte<span class="decorator">&#47;&gt;</span></h1>
+                <p class="description">Jack of all trades</p>
+            </section>
+            <section id="2" class="bio">
+                <h1 class="title">Bio</h1>
+                <div class="paragraph">
+                    <p>HELLO, my name is Jorge Fuerte, I am a college student studing Computer Science curently working hard to become a Roboticist.</p>
+                    </br>
+                    <p>Welcome to my personal website, I plan to use this website to showcase projects i work on for now this simple paragraph has to do, this entire page is made using HTML, CSS, and some JavaScript,  all that is running on a flask app.</p>
+                    </br>
+                    <p>Thank you for reading this far if you want to get in touch with me you can contact me using any of the links in the section down below, Goodbye for now</p>
+                </div>
+            </section>
+            <section id="3" class="contact">
+                <h1 class="name">Let's work together...</h1>
+                <p class="description">How do you take you coffee?</p>
+                <div class="contact-grid">
+                    <button
+                    id="github"
+                    class="contact-details"
+                    ><i class="fab fa-github"></i><a
+                    href="https://github.com/JorjoF"
+                    target="_blank"> GitHub</a></button>
         
-        <section id="welcome-section" class="welcome-section">
-            <div class="typewriter">
-                <h1>
-                <span class="name">&lt;</span>
-                Jorge Fuerte
-                <span class="name">&#47;&gt;</span>
-                </h1>
+                    <button
+                    id="Linkedin"
+                    class="contact-details"
+                    ><i class="fab fa-linkedin"></i><a
+                    href="https://github.com/JorjoF"
+                    target="_blank"> LinkedIn</a></button>
+                    
+                    <button
+                    id="email"
+                    class="contact-details">
+                    <i class="fas fa-at"></i>Send an email</button>
+                    
+                    <button
+                    id="resume"
+                    class="contact-details"
+                    ><i class="fas fa-file-alt"></i><a 
+                    href="static/Jorge Fuerte Resume.pdf"
+                    target="_blank"> My Resume</a></button>
+                </div>
+            </section>
+            <div class="modal-container" id="modal_container">
+                <div class="modal">
+                    <button id="close"><i class=" fa fa-times fa-2x"></i></button>
+                    <form action="https://formsubmit.co/jorge@jorgefuerte.dev" method="POST">
+                        <div class="form">
+                                <div class="form-name">
+                                    <div class="form-inputs">
+                                        <label>Name: </label>
+                                        <input type="text" name="name" id="Name" placeholder="Jane Doe" required>
+                                    </div>
+                                    <div class="form-inputs">
+                                        <label>Email: </label>
+                                        <input type="Email" name="email" id="Email" placeholder="you@example.com" required>
+                                    </div>
+                                </div>
+                                <div class="form-inputs subject">
+                                    <label>Subject: </label>
+                                    <input type="text" name="_subject" id="Subject" style:="">
+                                </div>
+                                <div class="form-inputs textarea">
+                                    <label>Message: </label>
+                                    <textarea name="message" id="Message" required></textarea>
+                                </div>
+                            <button type="submit"  class="send"> Send</button>
+                        </div>
+                        <input type="hidden" name="_next" value="127.0.0.1:5500/thanks.html">
+                        <input type="hidden" name="_cc" value="fuerte1206@gmail.com">
+                        <input type="hidden" name="_captcha" value="false">
+                    </form>
+                </div>
             </div>
-            <p>Web Developer, Graphic Designer</p>
-        </section>
-
-        <!-- END WELCOME SECTION-->
-        
-        <!-- START PROJECTS SECTION-->
-        <section id="projects" class="projects-section">
-            <div>
-            <h2 class="projects-section-header">These are some of my projects</h2>
-            </div>
-            <div class="projects-grid">
-                <a
-                href="https://github.com/JorjoF/Tribute-Page"
-                target="_blank"
-                class="project project-tile"
-                >
-                    <img
-                    class="project-image"
-                    src="https://i.ibb.co/VStcrR7/Screenshot-2020-09-22-134750-2.png"
-                    alt="project"
-                    />
-                    <p class="project-title">
-                    <span class="code">&lt;</span>
-                    Tribute Page
-                    <span class="code">&#47;&gt;</span>
-                    </p>
-                </a>
-                <a
-                href="https://github.com/JorjoF/Survey-form"
-                target="_blank"
-                class="project project-tile"
-                >
-                    <img
-                    class="project-image"
-                    src="https://i.ibb.co/WPjN6KQ/Screenshot-2020-09-22-173551-2.png"
-                    alt="project"
-                    />
-              <p class="project-title">
-                <span class="code">&lt;</span>
-                Survey Form
-                <span class="code">&#47;&gt;</span>
-              </p>
-            </a>
-            </div>
-        </section>
-        <!-- END PROJECTS SECTION -->
-        <!-- START CONTACT SECTION-->
-        <section id="contact" class="contact-section">
-            <div class="contact-section-header">
-                <h2>Let's work together...</h2>
-                <p class="contact-section-text">How do you take you coffee?</p>
-            </div>
-            <div class="contact-list">
-                <a
-                id="profile-link"
-                href="https://github.com/JorjoF"
-                target="_blank"
-                class="btn contact-details"
-                ><i class="fab fa-github"></i> GitHub</a>
-                <a href="mailto:fuerte1206@gmail.com" 
-                class="btn contact-details"
-                ><i class="fas fa-at"></i> Send an email</a>
-                <!--<a href="tel:555-555-5555" 
-                class="btn contact-details"
-                ><i class="fas fa-mobile-alt"></i> Call me</a>-->
-            </div>
-            
-        </section>
-        <!-- END CONTACT SECTION-->
-
-        <!-- START FOOTER SECTION -->
-
+        </main>
         <footer>
             <p>
             **This website was designed and built by Jorge Fuerte as his personal portfolio website.
@@ -131,7 +118,6 @@
             Jorge Fuerte
             </p>
         </footer>
-  
-        <!-- END FOOTER SECTION -->
-     </body>
+    </body>
+    <script type="text/javascript" src="static/js/main.js"></script>
 </html>
