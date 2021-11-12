@@ -87,7 +87,7 @@ p{
 
 @media only screen and (max-width: 600px){
     .container-message > h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 
     .container-back > h4{
